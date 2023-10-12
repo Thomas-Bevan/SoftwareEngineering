@@ -20,17 +20,22 @@ int main()
     cout << input << endl;
 
     //Write solution here
-
+    size_t loc = input.find("42");
 
 
     // Challenge 2 - word count
     // Type in a sentence, and count the number of time the words "the" appears 
+    int theCount = 0;
     getline(std::cin, input);   //Read a line (users types this in)
     istringstream iss(input);   //Create a string "stream" (sequence of words)
     string word;                //This will hold the next word
     while (iss >> word) {       //Read the next word (if there is one)
         cout << word << endl;   //Output each word in turn
+        if (word == "the") {
+            theCount++;
+        }
     }
+    cout << "The word 'the' appeared " << theCount << " times" << endl;
 
 }
 

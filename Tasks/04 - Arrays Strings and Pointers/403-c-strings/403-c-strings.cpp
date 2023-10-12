@@ -98,6 +98,6 @@ int main()
     int parsedYear = atoi(strYear);
     printf("The next year is %d\n", parsedYear+1);
 
-}
+
 
 
