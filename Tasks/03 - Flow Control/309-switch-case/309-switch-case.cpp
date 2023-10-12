@@ -52,4 +52,29 @@ int main()
         // Defensive coding! Catch the unexpected - in theory, this code cannot be reached
         cerr << "Error - invalided variable" << endl;
     }
+
+    switch (selection)
+    {
+        case 0:
+            cout << "9 to 5, Monday to Saturday. 10 to 4 on Sundays and Bank Holidays" << endl;
+            break;
+        case 1:
+            cout << "Redirecting you now" << endl;
+            break;
+        case 2:
+            cout << "Sorry - you will need to come to the store for that." << endl;
+            hangup();
+            break;
+        case 3:
+            cout << "Redirecting you now" << endl;
+            redirect(220);
+            break;
+        case 4:
+            cout << "Redirecting you now" << endl;
+            redirect(220);
+            break;
+        default:
+            cerr << "Error - invalided variable" << endl;
+
+    }
 }

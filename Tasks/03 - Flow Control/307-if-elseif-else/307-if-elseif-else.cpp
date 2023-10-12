@@ -47,4 +47,21 @@ int main()
     else {
         cout << "Tank is full" << endl;
     }
+
+    if (level >= 0 && level <= 5) {
+        cout << "Dangerously low" << endl;
+    }
+    else if (level > 5 && level <= 30) {
+        cout << "Low" << endl;
+    }
+    else if (level > 30 && level <= 70) {
+        cout << "Medium" << endl;
+    }
+    else if (level > 70 && level <= 95) {
+        cout << "High" << endl;
+    }
+    else {
+        cout << "Full" << endl;
+    }
+    
 }

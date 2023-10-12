@@ -45,6 +45,9 @@ int main()
     else //Ok, it is > low, so do the following.....
     {
         cout << "Tank has sufficient fuel for now." << endl;
+        if (level != 100) {
+            cout << "Tank can still be topped up" << endl;
+        }
         // If it is not full, let the user know they could still top it up.
     }
 }
