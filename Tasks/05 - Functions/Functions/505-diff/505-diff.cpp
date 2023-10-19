@@ -4,6 +4,18 @@ using namespace std;
 //Function prototypes
 int sub(int u, int v);
 
+int absDiff(int u, int v)
+{
+    int y;
+
+    if (u > v) {
+        y = u - v;
+    }
+    else {
+        y = v - u;
+    }
+    return y;
+}
 
 int main()
 {

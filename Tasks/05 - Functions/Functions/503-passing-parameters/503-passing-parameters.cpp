@@ -1,30 +1,30 @@
 #include <iostream>
 using namespace std;
 
-void displayBanner(int stringLen)
+void displayBanner(string message)
 {
+	int stringLen = message.length();
 	for (unsigned int n = 0; n < (stringLen + 4); n++) {
 		cout << "*";
 	}
 	cout << endl;
 }
 
+void displayWithinBanner(string message)
+{
+	displayBanner(message);
+	cout << "* " << message << " *" << endl;
+	displayBanner(message);
+}
+
 int main()
 {
 	const string message = "Welcome to Computer Science";
 
-	//Get the length of the string
-	int L = message.length();			//L is now a LOCAL variable
+
 
 	//Write the banner above
-	displayBanner(L);
-
-	cout << "* ";				//Leading *
-	cout << message;			//Message
-	cout << " *" << endl;		//Trailing *
-
-	//Write the banner below
-	displayBanner(L);
+	displayWithinBanner(message);
 
 	//Tell the calling shell all is well
 	return 0;
