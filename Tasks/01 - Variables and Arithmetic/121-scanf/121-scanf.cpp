@@ -16,6 +16,12 @@ int main()
 
     //Display what was typed in
     printf("x = %d\n", x);
+
+    int y = 0;
+    printf("Enter another number\n");
+    found = scanf_s("%d", &x);
+    double average = (double(x) + double(y)) / 2;
+    printf("Average = %f");
 }
 
 

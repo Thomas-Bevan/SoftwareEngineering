@@ -36,6 +36,7 @@ int main()
     x = x / 0.0;      //Error!!!!????
     printf("x = %f\n", x);
 
+
 }
 
 
